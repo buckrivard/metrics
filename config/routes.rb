@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+	resources :registered_applications, path: 'reg_apps'
+
   devise_for :users, path: 'accounts'
 
   get 'welcome/about'
